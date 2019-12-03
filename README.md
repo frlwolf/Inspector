@@ -1,10 +1,10 @@
 # Inspector
 
-Calculate score of a form, given certain answers
+Calculate score of a form, given certain responses
 
 # How to run the project
 
-- Open the Inspector.xcodeproj
+- Open Inspector.xcodeproj
 - Select any simulator for iOS 13
 - Press run
 
