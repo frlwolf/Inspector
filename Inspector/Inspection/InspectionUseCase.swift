@@ -4,11 +4,13 @@
 //
 
 import Foundation
+import Combine
 
 class InspectionUseCase {
 
 	let presentable: InspectionPresentable
 	let gateway: FormGateway
+	var cancellable: AnyCancellable?
 
 	init(gateway: FormGateway, presentable: InspectionPresentable) {
 		self.presentable = presentable
@@ -16,9 +18,14 @@ class InspectionUseCase {
 	}
 
 	func calculateInspection() {
-		let form = try! gateway.fetchForm()
-		let score = FormScoreCalculator(form: form).calculateScore()
-		presentable.present(inspection: Inspection(score: score))
+		cancellable = try? gateway.fetchForm()
+			.receive(on: RunLoop.main)
+			.sink(receiveValue: { form in
+				if let form = form {
+					let score = FormScoreCalculator(form: form).calculateScore()
+					self.presentable.present(inspection: Inspection(score: score))
+				}
+			})
 	}
 
 }

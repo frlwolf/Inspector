@@ -16,6 +16,13 @@ class InspectionViewController: UIViewController {
 
     var subscriber: AnyCancellable?
 
+    private lazy var activityIndicator: UIActivityIndicatorView = {
+        let activityIndicator = UIActivityIndicatorView(style: .medium)
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+
+        return activityIndicator
+    }()
+
     private lazy var actualLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -87,6 +94,7 @@ class InspectionViewController: UIViewController {
         view.addSubview(maxLabel)
         view.addSubview(scoreLabel)
         view.addSubview(button)
+        view.addSubview(activityIndicator)
     }
 
     private func setupConstraints() {
@@ -103,6 +111,9 @@ class InspectionViewController: UIViewController {
             button.topAnchor.constraint(equalTo: scoreLabel.bottomAnchor, constant: 24),
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             button.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.66),
+
+            activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            activityIndicator.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 8)
         ]
 
         NSLayoutConstraint.activate(constraints)
@@ -112,9 +123,12 @@ class InspectionViewController: UIViewController {
     private func unleashTheMagic(sender: UIButton) {
         sender.isEnabled = false
         useCase.calculateInspection()
+        activityIndicator.startAnimating()
     }
     
     private func configure(inspection: Inspection) {
+        activityIndicator.stopAnimating()
+
         actualLabel.text = "Actual: \(inspection.actualScore)"
         maxLabel.text = "Max: \(inspection.maxScore)"
         scoreLabel.text = "Score: \(inspection.score)"

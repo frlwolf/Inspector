@@ -4,25 +4,26 @@
 //
 
 import Foundation
+import Combine
 
 protocol FormGateway {
 
-	func fetchForm() throws -> Form
+	func fetchForm() throws -> AnyPublisher<Form?, Never>
 
 }
 
 class FormFetcher: FormGateway {
 
-	func fetchForm() throws -> Form {
-		guard let url = Bundle.main.url(forResource: "form2", withExtension: ".json") else {
-			fatalError("The application was unable to find a 'form2.json' file at the project's bundle")
-		}
+	func fetchForm() throws -> AnyPublisher<Form?, Never> {
 
-		return try JSONDecoder().decode(Form.self, from: request(url: url))
-	}
+		let url = URL(string: "http://lumiform-sandbox.s3.eu-central-1.amazonaws.com/form2.json")!
+		let publisher = URLSession.shared.dataTaskPublisher(for: url)
+				.map { $0.data }
+				.decode(type: Form?.self, decoder: JSONDecoder())
+				.replaceError(with: nil)
+				.eraseToAnyPublisher()
 
-	private func request(url: URL) throws -> Data {
-		return try Data(contentsOf: url)
+		return publisher
 	}
 
 }
