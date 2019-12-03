@@ -23,7 +23,6 @@
 		27F4C8A92395C578009F2118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F4C8A82395C578009F2118 /* Assets.xcassets */; };
 		27F4C8AC2395C578009F2118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F4C8AA2395C578009F2118 /* LaunchScreen.storyboard */; };
 		27F4C8B72395C579009F2118 /* InspectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F4C8B62395C579009F2118 /* InspectorTests.swift */; };
-		27F4C8C22395C62F009F2118 /* form2.json in Resources */ = {isa = PBXBuildFile; fileRef = 27F4C8C12395C62F009F2118 /* form2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 		27F4C8B22395C579009F2118 /* InspectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InspectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F4C8B62395C579009F2118 /* InspectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorTests.swift; sourceTree = "<group>"; };
 		27F4C8B82395C579009F2118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27F4C8C12395C62F009F2118 /* form2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = form2.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +133,6 @@
 			children = (
 				27F4C8A82395C578009F2118 /* Assets.xcassets */,
 				27F4C8AA2395C578009F2118 /* LaunchScreen.storyboard */,
-				27F4C8C12395C62F009F2118 /* form2.json */,
 				27F4C8AD2395C578009F2118 /* Info.plist */,
 				1E90E86260AF2311858C4DB3 /* Inspection */,
 				1E90EFF62577BC8C182288DB /* Form */,
@@ -234,7 +231,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F4C8C22395C62F009F2118 /* form2.json in Resources */,
 				27F4C8AC2395C578009F2118 /* LaunchScreen.storyboard in Resources */,
 				27F4C8A92395C578009F2118 /* Assets.xcassets in Resources */,
 			);
