@@ -26,13 +26,22 @@ struct Item: Decodable {
 		case weight
 	}
 
-	private struct Params: Decodable {
+    struct Params: Decodable {
 		let responseSet: String?
 		enum CodingKeys: String, CodingKey {
 			case responseSet = "response_set"
 		}
 	}
-
+    
+    init(type: String, items: [Item]? = nil, responseType: String? = nil, params: Params? = nil, response: [String]? = nil, weight: Int? = nil) {
+        self.type = type
+        self.items = items
+        self.responseType = responseType
+        self.response = response
+        self.params = params
+        self.weight = weight
+    }
+    
 }
 
 struct ScorableQuestion {

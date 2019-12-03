@@ -25,5 +25,10 @@ struct Form: Decodable {
 			case responseSets = "response_sets"
 		}
 	}
+    
+    init(items: [Item], params: Params) {
+        self.items = items
+        self.params = params
+    }
 
 }
