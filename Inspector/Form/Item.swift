@@ -38,8 +38,8 @@ struct Item: Decodable {
 struct ScorableQuestion {
 
 	let responseType: String
-	let responseSet: String!
-	let responses: [String]!
+	let responseSet: String
+	let responses: [String]
 
 	init?(item: Item) {
 		if item.type != "question" || item.responseType != "list" {

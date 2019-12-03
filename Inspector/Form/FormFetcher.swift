@@ -15,12 +15,14 @@ class FormFetcher: FormGateway {
 
 	func fetchForm() throws -> Form {
 		guard let url = Bundle.main.url(forResource: "form2", withExtension: ".json") else {
-			fatalError()
+			fatalError("The application was unable to find a 'form2.json' file at the project's bundle")
 		}
 
-		let json = try JSONDecoder().decode(Form.self, from: Data(contentsOf: url))
+		return try JSONDecoder().decode(Form.self, from: request(url: url))
+	}
 
-		return json
+	private func request(url: URL) throws -> Data {
+		return try Data(contentsOf: url)
 	}
 
 }

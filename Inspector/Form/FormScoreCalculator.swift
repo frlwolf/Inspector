@@ -38,9 +38,15 @@ struct FormScoreCalculator {
 			return scoreFor(question: question)
 		} else if let section = Section(item: item) {
 			return scoreFor(section: section)
-		}
+        }
 
-		return calculateScore(items: item.items)
+		let score = calculateScore(items: item.items)
+        
+        if item.type == "page" {
+            print("Page -> \(score)")
+        }
+        
+        return score
 	}
 
 	private func scoreFor(question: ScorableQuestion) -> Score {

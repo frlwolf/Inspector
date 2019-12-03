@@ -11,7 +11,7 @@ struct Inspection {
 	let maxScore: Int
 
 	var score: Float {
-		return Float(actualScore) / Float(maxScore)
+		return maxScore == 0 ? 0 : Float(actualScore) / Float(maxScore)
 	}
 
 }
