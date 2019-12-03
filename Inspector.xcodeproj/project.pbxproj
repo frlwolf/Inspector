@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E90E2922FCD75D752C6C095 /* InspectionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EB31BBFCF79224D0B978 /* InspectionUseCase.swift */; };
-		1E90E96AA37549C7264DBA48 /* FormFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E10ED7E2BEEF0307666C /* FormFetcher.swift */; };
-		1E90ED8BF8C377C24AE2D606 /* Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EF17B1B6F9AEA24C10A7 /* Inspection.swift */; };
-		1E90EF8300C440AB366A98D9 /* InspectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E3A0AB50838DBB5C240B /* InspectionViewModel.swift */; };
+		1E90E33E3641AB837B9181DE /* InspectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E77B819D0E121A32D474 /* InspectionViewController.swift */; };
+		1E90E4894C6F392540EEFE2E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E4E7579F8AE1F119210B /* Response.swift */; };
+		1E90E5EEE1C1A744788995E2 /* ResponseSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E8DC02CF36E0115C48CD /* ResponseSet.swift */; };
+		1E90E69753A780E38ECEF5DC /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90ED2F29AD289180DA97A5 /* Form.swift */; };
+		1E90E6B4F5ABEEE8455E2556 /* Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E98BEF344AD3B989A750 /* Inspection.swift */; };
+		1E90E7CC3BACAAC7FE8C9B6B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EB4773124B2FAC265446 /* Item.swift */; };
+		1E90E9835E9BAD6E1F06824D /* FormFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E4E018A5E0516F819837 /* FormFetcher.swift */; };
+		1E90EA9E4F14A59A603954AF /* InspectionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90E99C13CEBEEFCA34AAA5 /* InspectionUseCase.swift */; };
+		1E90EB68E153A74830FABBFE /* InspectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EBEF7C1278E41D2B6C05 /* InspectionViewModel.swift */; };
+		1E90EEDD366F414E4406D627 /* FormScoreCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E90EA6E6D4976A0F342E30D /* FormScoreCalculator.swift */; };
 		27F3FB2F2395C78E00A27B27 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3FB2E2395C78E00A27B27 /* RootCoordinator.swift */; };
 		27F4C8A02395C574009F2118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F4C89F2395C574009F2118 /* AppDelegate.swift */; };
 		27F4C8A22395C574009F2118 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F4C8A12395C574009F2118 /* SceneDelegate.swift */; };
-		27F4C8A42395C574009F2118 /* InspectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F4C8A32395C574009F2118 /* InspectionViewController.swift */; };
 		27F4C8A92395C578009F2118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F4C8A82395C578009F2118 /* Assets.xcassets */; };
 		27F4C8AC2395C578009F2118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F4C8AA2395C578009F2118 /* LaunchScreen.storyboard */; };
 		27F4C8B72395C579009F2118 /* InspectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F4C8B62395C579009F2118 /* InspectorTests.swift */; };
@@ -32,15 +37,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E90E10ED7E2BEEF0307666C /* FormFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormFetcher.swift; sourceTree = "<group>"; };
-		1E90E3A0AB50838DBB5C240B /* InspectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionViewModel.swift; sourceTree = "<group>"; };
-		1E90EB31BBFCF79224D0B978 /* InspectionUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionUseCase.swift; sourceTree = "<group>"; };
-		1E90EF17B1B6F9AEA24C10A7 /* Inspection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspection.swift; sourceTree = "<group>"; };
+		1E90E4E018A5E0516F819837 /* FormFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormFetcher.swift; sourceTree = "<group>"; };
+		1E90E4E7579F8AE1F119210B /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		1E90E77B819D0E121A32D474 /* InspectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionViewController.swift; sourceTree = "<group>"; };
+		1E90E8DC02CF36E0115C48CD /* ResponseSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSet.swift; sourceTree = "<group>"; };
+		1E90E98BEF344AD3B989A750 /* Inspection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspection.swift; sourceTree = "<group>"; };
+		1E90E99C13CEBEEFCA34AAA5 /* InspectionUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionUseCase.swift; sourceTree = "<group>"; };
+		1E90EA6E6D4976A0F342E30D /* FormScoreCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormScoreCalculator.swift; sourceTree = "<group>"; };
+		1E90EB4773124B2FAC265446 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		1E90EBEF7C1278E41D2B6C05 /* InspectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionViewModel.swift; sourceTree = "<group>"; };
+		1E90ED2F29AD289180DA97A5 /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		27F3FB2E2395C78E00A27B27 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		27F4C89C2395C574009F2118 /* Inspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inspector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F4C89F2395C574009F2118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F4C8A12395C574009F2118 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		27F4C8A32395C574009F2118 /* InspectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewController.swift; sourceTree = "<group>"; };
 		27F4C8A82395C578009F2118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27F4C8AB2395C578009F2118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F4C8AD2395C578009F2118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +78,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E90E86260AF2311858C4DB3 /* Inspection */ = {
+			isa = PBXGroup;
+			children = (
+				1E90E98BEF344AD3B989A750 /* Inspection.swift */,
+				1E90E99C13CEBEEFCA34AAA5 /* InspectionUseCase.swift */,
+				1E90E77B819D0E121A32D474 /* InspectionViewController.swift */,
+				1E90EBEF7C1278E41D2B6C05 /* InspectionViewModel.swift */,
+			);
+			path = Inspection;
+			sourceTree = "<group>";
+		};
+		1E90EFF62577BC8C182288DB /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				1E90ED2F29AD289180DA97A5 /* Form.swift */,
+				1E90E4E018A5E0516F819837 /* FormFetcher.swift */,
+				1E90EA6E6D4976A0F342E30D /* FormScoreCalculator.swift */,
+				1E90E4E7579F8AE1F119210B /* Response.swift */,
+				1E90E8DC02CF36E0115C48CD /* ResponseSet.swift */,
+				1E90EB4773124B2FAC265446 /* Item.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
 		27F4C8932395C574009F2118 = {
 			isa = PBXGroup;
 			children = (
@@ -92,15 +126,12 @@
 				27F4C89F2395C574009F2118 /* AppDelegate.swift */,
 				27F4C8A12395C574009F2118 /* SceneDelegate.swift */,
 				27F3FB2E2395C78E00A27B27 /* RootCoordinator.swift */,
-				27F4C8A32395C574009F2118 /* InspectionViewController.swift */,
 				27F4C8A82395C578009F2118 /* Assets.xcassets */,
 				27F4C8AA2395C578009F2118 /* LaunchScreen.storyboard */,
 				27F4C8C12395C62F009F2118 /* form2.json */,
 				27F4C8AD2395C578009F2118 /* Info.plist */,
-				1E90E3A0AB50838DBB5C240B /* InspectionViewModel.swift */,
-				1E90EB31BBFCF79224D0B978 /* InspectionUseCase.swift */,
-				1E90E10ED7E2BEEF0307666C /* FormFetcher.swift */,
-				1E90EF17B1B6F9AEA24C10A7 /* Inspection.swift */,
+				1E90E86260AF2311858C4DB3 /* Inspection */,
+				1E90EFF62577BC8C182288DB /* Form */,
 			);
 			path = Inspector;
 			sourceTree = "<group>";
@@ -216,13 +247,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F3FB2F2395C78E00A27B27 /* RootCoordinator.swift in Sources */,
-				27F4C8A42395C574009F2118 /* InspectionViewController.swift in Sources */,
 				27F4C8A02395C574009F2118 /* AppDelegate.swift in Sources */,
 				27F4C8A22395C574009F2118 /* SceneDelegate.swift in Sources */,
-				1E90EF8300C440AB366A98D9 /* InspectionViewModel.swift in Sources */,
-				1E90E2922FCD75D752C6C095 /* InspectionUseCase.swift in Sources */,
-				1E90E96AA37549C7264DBA48 /* FormFetcher.swift in Sources */,
-				1E90ED8BF8C377C24AE2D606 /* Inspection.swift in Sources */,
+				1E90E6B4F5ABEEE8455E2556 /* Inspection.swift in Sources */,
+				1E90EA9E4F14A59A603954AF /* InspectionUseCase.swift in Sources */,
+				1E90E33E3641AB837B9181DE /* InspectionViewController.swift in Sources */,
+				1E90EB68E153A74830FABBFE /* InspectionViewModel.swift in Sources */,
+				1E90E69753A780E38ECEF5DC /* Form.swift in Sources */,
+				1E90E9835E9BAD6E1F06824D /* FormFetcher.swift in Sources */,
+				1E90EEDD366F414E4406D627 /* FormScoreCalculator.swift in Sources */,
+				1E90E4894C6F392540EEFE2E /* Response.swift in Sources */,
+				1E90E5EEE1C1A744788995E2 /* ResponseSet.swift in Sources */,
+				1E90E7CC3BACAAC7FE8C9B6B /* Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

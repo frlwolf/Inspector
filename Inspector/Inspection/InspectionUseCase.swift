@@ -16,13 +16,17 @@ class InspectionUseCase {
 	}
 
 	func calculateInspection() {
-		let _ = gateway.fetchForm()
+		let form = try! gateway.fetchForm()
+		let score = FormScoreCalculator(form: form).calculateScore()
+		presentable.present(inspection: Inspection(score: score))
+	}
 
-		// processes the form and creates an inspection
+}
 
-		let inspection = Inspection(actualScore: 1, maxScore: 1)
+extension Inspection {
 
-		presentable.present(inspection: inspection)
+	init(score: Score) {
+		self.init(actualScore: score.actual, maxScore: score.max)
 	}
 
 }
